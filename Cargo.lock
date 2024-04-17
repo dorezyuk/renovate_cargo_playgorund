@@ -5,7 +5,7 @@ version = 3
 [[package]]
 name = "anyhow"
 version = "1.0.82"
-source = "git+https://github.com/dtolnay/anyhow.git?branch=master#e77374f1edff6f133e912400bbafa09dc7c64db4"
+source = "git+https://github.com/dtolnay/anyhow.git?branch=master#cb47d7c31a3f28eaa08fe936d0bd58b7a7ab738a"
 
 [[package]]
 name = "fun"
@@ -44,16 +44,16 @@ dependencies = [
 
 [[package]]
 name = "serde"
-version = "1.0.198"
-source = "git+https://github.com/serde-rs/serde.git?tag=v1.0.198#c4fb92333593ac875ca7b615398f9de9d703ba8f"
+version = "1.0.197"
+source = "git+https://github.com/serde-rs/serde.git?tag=v1.0.197#c4fb92333593ac875ca7b615398f9de9d703ba8f"
 dependencies = [
  "serde_derive",
 ]
 
 [[package]]
 name = "serde_derive"
-version = "1.0.198"
-source = "git+https://github.com/serde-rs/serde.git?tag=v1.0.198#c4fb92333593ac875ca7b615398f9de9d703ba8f"
+version = "1.0.197"
+source = "git+https://github.com/serde-rs/serde.git?tag=v1.0.197#c4fb92333593ac875ca7b615398f9de9d703ba8f"
 dependencies = [
  "proc-macro2",
  "quote 1.0.36 (registry+https://github.com/rust-lang/crates.io-index)",

@@ -3,7 +3,7 @@
   "extends": [
     "config:recommended"
   ],
-  "enabledManagers": ["cargo", "custom.regex"],
+  "enabledManagers": ["cargo"],
   "prConcurrentLimit": 5,
   "packageRules" : [
     {
