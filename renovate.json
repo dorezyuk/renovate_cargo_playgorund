@@ -4,30 +4,5 @@
     "config:recommended"
   ],
   "enabledManagers": ["cargo"],
-  "prConcurrentLimit": 5,
-  "packageRules" : [
-    {
-      "groupName": "everest dependencies",
-      "matchFileNames": ["**/versions.bzl", "**/everest-core_%.bbappend", "**/everest-framework_%.bbappend"]
-    }
-  ],
-  "customManagers": [
-    {
-      "customType": "regex",
-      "fileMatch": ["versions.bzl$"],
-      "matchStrings": ["(.|\\s)*?_repo\\s*=\\s*\"(?<packageName>.*?)\",(.|\\s)*?_rev\\s*=\\s*\"(?<currentDigest>.*?)\",\\n"],
-      "currentValueTemplate": "main",
-      "depNameTemplate": "{{{packageName}}}",
-      "datasourceTemplate": "git-refs"
-    },
-    {
-      "customType": "regex",
-      "fileMatch": ["everest-.*?_%.bbappend$"],
-      "matchStrings": ["SRC_URI\\s*=\\s*\"git://(?<packageNameUrl>.*?).git;(.|\\s)*?SRCREV\\s*=\\s*\"(?<currentDigest>.*?)\""],
-      "currentValueTemplate": "main",
-      "packageNameTemplate": "https://{{{packageNameUrl}}}",
-      "depNameTemplate": "https://{{{packageNameUrl}}}",
-      "datasourceTemplate": "git-refs"
-    }
-  ]
+  "prConcurrentLimit": 5
 }
