@@ -3,6 +3,11 @@
   "extends": [
     "config:recommended"
   ],
+  "postUpgradeTasks": {
+    "commands": ["cargo metadata"],
+    "fileFilters": ["Cargo.toml", "**/*.js"],
+    "executionMode": "update"
+  },
   "enabledManagers": ["cargo"],
   "prConcurrentLimit": 5
 }
